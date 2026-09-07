@@ -243,9 +243,10 @@ h3 {
 
 .phone {
   position: relative;
-  width: min(100%, 346px);
-  min-height: 676px;
-  border: 12px solid #17201d;
+  width: min(100%, 342px);
+  aspect-ratio: 1242 / 2688;
+  overflow: hidden;
+  border: 10px solid #17201d;
   border-radius: 48px;
   background: #17201d;
   box-shadow: var(--shadow);
@@ -260,100 +261,12 @@ h3 {
   background: linear-gradient(145deg, rgba(153, 240, 208, 0.7), rgba(11, 92, 73, 0.08));
 }
 
-.phone-top {
-  position: absolute;
-  top: 13px;
-  left: 50%;
-  z-index: 2;
-  width: 86px;
-  height: 25px;
-  border-radius: 999px;
-  background: #17201d;
-  transform: translateX(-50%);
-}
-
-.phone-screen {
-  min-height: 652px;
-  border-radius: 36px;
-  padding: 66px 22px 24px;
-  background:
-    radial-gradient(circle at top right, rgba(153, 240, 208, 0.35), transparent 16rem),
-    #f8fbf8;
-}
-
-.screen-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 22px;
-  color: var(--text);
-  font-size: 1.52rem;
-  font-weight: 800;
-}
-
-.screen-dot {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--primary);
-  box-shadow: 0 0 0 8px rgba(153, 240, 208, 0.24);
-}
-
-.event-card {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
-  border: 1px solid rgba(11, 92, 73, 0.1);
-  border-radius: 22px;
-  padding: 16px;
-  background: #ffffff;
-  box-shadow: 0 16px 36px rgba(11, 92, 73, 0.09);
-}
-
-.muted-card {
-  opacity: 0.78;
-}
-
-.event-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 17px;
-  background:
-    linear-gradient(var(--primary-strong), var(--primary-strong)) 50% 50% / 20px 4px no-repeat,
-    linear-gradient(var(--primary-strong), var(--primary-strong)) 50% 50% / 4px 20px no-repeat,
-    var(--surface-soft);
-}
-
-.event-icon.small {
-  background:
-    radial-gradient(circle at 50% 42%, var(--primary-strong) 0 6px, transparent 7px),
-    var(--surface-soft);
-}
-
-.event-card p {
-  margin-bottom: 3px;
-  color: var(--text);
-  font-weight: 760;
-}
-
-.event-card span {
-  color: var(--muted);
-  font-size: 0.93rem;
-  font-weight: 620;
-}
-
-.phone-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 52px;
-  margin-top: 28px;
-  border-radius: 18px;
-  background: var(--primary-strong);
-  color: #ffffff;
-  font-weight: 780;
+.phone-screenshot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 37px;
+  object-fit: cover;
 }
 
 .section {
@@ -598,11 +511,6 @@ h3 {
 
   .phone {
     width: min(100%, 330px);
-    min-height: 640px;
-  }
-
-  .phone-screen {
-    min-height: 616px;
   }
 
   .privacy-panel,
@@ -659,28 +567,10 @@ h3 {
   .phone {
     border-width: 10px;
     border-radius: 42px;
-    min-height: 594px;
   }
 
-  .phone-screen {
-    min-height: 572px;
-    padding: 60px 16px 20px;
-    border-radius: 31px;
-  }
-
-  .screen-header {
-    font-size: 1.34rem;
-  }
-
-  .event-card {
-    grid-template-columns: 42px 1fr;
-    padding: 14px;
-  }
-
-  .event-icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 15px;
+  .phone-screenshot {
+    border-radius: 32px;
   }
 
   .policy-copy,
